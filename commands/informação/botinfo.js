@@ -16,7 +16,7 @@ module.exports = {
       online: '`🟢` Online',
       offline: '`⚫` Offline',
     }
-    const link = '' /** link do meu repositorio  */
+    const link = 'https://github.com/WalissonVinicius/ZigZag'
 
     const embed = new Discord.MessageEmbed()
       .setColor(process.env.COLOR)
