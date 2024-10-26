@@ -43,6 +43,3 @@ ou
 $ yarn start
 ```
 
-## Ajuda
-
-Caso tenha alguma dificuldade em entender este código ou por onde começar, nos contate em nosso servidor do Discord.
