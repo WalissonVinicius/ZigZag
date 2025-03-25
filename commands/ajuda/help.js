@@ -25,8 +25,8 @@ module.exports = {
         .setAuthor('📃 Lista de comandos')
         .addFields(categories)
         .setDescription(`Use ${process.env.PREFIX}help + *nome do comando* para ver mais informações.`)
-        .setColor(process.env.COLOR).setFooter('2024 © Walisson Vinicius', 'https://i.imgur.com/LVacCMS.png?width=200,height=200')
-        .setFooter('2024 © Walisson Vinicius', 'https://i.imgur.com/LVacCMS.png?width=60,height=60')
+        .setColor(process.env.COLOR)
+        .setFooter('2024 © Walisson Vinicius', 'https://i.imgur.com/LVacCMS.png')
         .setTimestamp()
 
       return message.channel.send(helpembed)
@@ -38,7 +38,7 @@ module.exports = {
           .setAuthor('Comando não encontrado!')
           .setDescription(`Use \`${process.env.PREFIX}help\` para listar todos os comandos ou \`${process.env.PREFIX}help\` + *comando*.`)
           .setColor(process.env.COLOR)
-          .setFooter('2024 © Walisson Vinicius', 'https://i.imgur.com/LVacCMS.png?width=150,height=150')
+          .setFooter('2024 © Walisson Vinicius', 'https://i.imgur.com/LVacCMS.png')
           .setTimestamp()
 
         return message.channel.send(nocommandembed)
@@ -51,7 +51,7 @@ module.exports = {
         .addField('Descrição', command.help.description)
         .addField('Categoria', command.help.category)
         .setColor(process.env.COLOR)
-        .setFooter('2024 © Walisson Vinicius', 'https://i.imgur.com/LVacCMS.png?width=150,height=150')
+        .setFooter('2024 © Walisson Vinicius', 'https://i.imgur.com/LVacCMS.png')
         .setTimestamp()
 
       return message.channel.send(helpcommandembed)
